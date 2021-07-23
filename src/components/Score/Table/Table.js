@@ -95,7 +95,7 @@ const queryClient = new QueryClient();
   
         
 	let { isLoading, error, data } = useQuery("result", () =>
-		fetch("https://trivia-game-back-end.herokuapp.com").then((res) =>
+		fetch("https://trivia-game-back-end.herokuapp.com/result").then((res) =>
 			res.json(),
 		),
 	);  
