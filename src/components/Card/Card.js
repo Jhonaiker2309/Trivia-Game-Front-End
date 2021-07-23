@@ -97,7 +97,7 @@ export default function MediaCard({result, url,ready, numberOfCurrentQuestion, n
       e.preventDefault()
     }
     else {
-      axios.post("https://trivia-game-back-end.herokuapp.com/result", result);
+      axios.post("https://trivia-game-back-end.herokuapp.com", result);
     }
   }
 
